@@ -1,0 +1,63 @@
+:root{
+  --green: #41B3A3;
+  --purple: purple;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: var(--green);
+  font-family: sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 54px;
+}
+
+.container{
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#playBoard{
+  width: 452px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-size: 150px;
+}
+
+button{
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--purple);
+  outline: none;
+  color: white;
+}
+
+button:hover{
+  border: 2px solid var(--green);
+  margin: -2px;
+}
+
+h2{
+  margin: 50px;
+}
