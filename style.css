@@ -1,12 +1,14 @@
 :root{
-  --green: #41B3A3;
-  --purple: purple;
+  --green: #5CDB95;
+  --darkgreen: #379683;
+  --blue: #05386B;
 }
 body{
   margin: 0;
   padding: 0;
   color: var(--green);
   font-family: sans-serif;
+  background-color: #EDF5E1;
 }
 
 *{
@@ -15,15 +17,24 @@ body{
 
 h1{
   font-size: 54px;
+  color: var(--blue);
 }
 
 .container{
   padding: 40px;
   height: 100vh;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--green);
+  padding: 50px;
+  border-radius: 30px;
 }
 
 #playBoard{
@@ -39,7 +50,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--green);
+  color: var(--blue);
   font-size: 150px;
 }
 
@@ -48,16 +59,43 @@ button{
   font-size: 25px;
   border-radius: 10px;
   border: none;
-  background-color: var(--purple);
+  background-color: var(--darkgreen);
   outline: none;
   color: white;
 }
 
 button:hover{
-  border: 2px solid var(--green);
+  border: 2px solid var(--blue);
   margin: -2px;
 }
 
 h2{
   margin: 50px;
+  color: var(--blue);
+}
+
+.win-counter{
+  background-color: var(--green);
+  height: 900px;
+  width: 452px;
+  padding: 50px;
+  border-radius: 30px;
+  color: var(--blue);
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.wins{
+  font-size: 30px;
+  padding-top: 35%;
+  font-weight: bold;
+  font-family:monospace;
+  text-decoration: underline;;
+}
+.text{
+  margin-bottom: 40px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  height: 600px;
+  font-family:monospace;
 }
